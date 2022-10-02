@@ -24,8 +24,8 @@ function Cheat()
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
 
-    PlayerSection:NewSlider("Jump Power", "Choose Jump Power", 500, 50, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    PlayerSection:NewSlider("Jump Height", "Choose Jump Height", 500, 7, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpHeight = s
     end)
 
     --Button Auto Farme
