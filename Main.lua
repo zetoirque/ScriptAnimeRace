@@ -7,8 +7,8 @@ function Cheat()
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Auto Farme")
 
-    local Player = Window:NewTab("ZIZIIZIZIZI")
-    local PlayerSection = Player:NewSection("ZIZIZIIZIZI")
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
 
     local Info = Window:NewTab("Info")
     local InfoSection = Info:NewSection("Info")
@@ -19,6 +19,14 @@ function Cheat()
     end)
 
     --Button Player
+
+    PlayerSection:NewSlider("Walk Speed", "Choose Your Walk Speed", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Walk Speed", "Choose Your Walk Speed", 500, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
 
     --Button Auto Farme
 
