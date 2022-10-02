@@ -49,7 +49,6 @@ function Cheat()
     mouse.Button1Down:Connect(function()
         if shifthold then
             if ClickTP == true then
-                print("click")
                 game:GetService("Players").LocalPlayer.Character:MoveTo(mouse.Hit.p)
             end
          end
@@ -58,7 +57,6 @@ function Cheat()
        uis.InputBegan:Connect(function(input, process)
          if ClickTP == true then
             if input.KeyCode == Enum.KeyCode.LeftAlt then
-                print("false")
                 shifthold = true
             end
          end
@@ -67,7 +65,6 @@ function Cheat()
        uis.InputEnded:Connect(function(input, process)
          if ClickTP == true then
             if input.KeyCode == Enum.KeyCode.LeftAlt then
-                    print()
                    shifthold = false
            end
         end
