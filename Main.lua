@@ -24,7 +24,7 @@ function Cheat()
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
 
-    PlayerSection:NewSlider("Walk Speed", "Choose Your Walk Speed", 500, 50, function(s)
+    PlayerSection:NewSlider("Jump Power", "Choose Your Jump Power", 500, 50, function(s)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     end)
 
