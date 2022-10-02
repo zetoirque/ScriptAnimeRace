@@ -25,7 +25,7 @@ function Cheat()
     end)
 
     PlayerSection:NewSlider("Walk Speed", "Choose Your Walk Speed", 500, 50, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     end)
 
     --Button Auto Farme
