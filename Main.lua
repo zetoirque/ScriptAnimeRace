@@ -1,5 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
+--ClickTPVar
+local shifthold  = false
+local ClickTP = false
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+local mouse = player:GetMouse()
+local uis = game:GetService("UserInputService")
+
 
 function Cheat()
     local Window = Library.CreateLib("SCRIPT BY ZETOIRQUE", "GrapeTheme")
@@ -20,6 +29,52 @@ function Cheat()
 
     --Button Player
 
+    --Click TP
+    PlayerSection:NewToggle("Click TP", "Right Alt + Click For tp where your mouse is", function(state)
+        if state then
+            
+            ClickTP = true
+            shifthold  = false
+
+        else
+           
+            ClickTP = false
+            shifthold  = false
+
+        end
+
+    end)
+
+    --ClickTPScript
+    mouse.Button1Down:Connect(function()
+        if shifthold then
+            if ClickTP == true then
+                print("click")
+                game:GetService("Players").LocalPlayer.Character:MoveTo(mouse.Hit.p)
+            end
+         end
+       end)
+   
+       uis.InputBegan:Connect(function(input, process)
+         if ClickTP == true then
+            if input.KeyCode == Enum.KeyCode.LeftAlt then
+                print("false")
+                shifthold = true
+            end
+         end
+       end)
+   
+       uis.InputEnded:Connect(function(input, process)
+         if ClickTP == true then
+            if input.KeyCode == Enum.KeyCode.LeftAlt then
+                    print()
+                   shifthold = false
+           end
+        end
+       end)
+
+
+    --Slides
     PlayerSection:NewSlider("Walk Speed", "Choose Your Walk Speed", 500, 16, function(s)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
@@ -27,6 +82,7 @@ function Cheat()
     PlayerSection:NewSlider("Jump Height", "Choose Jump Height", 500, 7, function(s)
         game.Players.LocalPlayer.Character.Humanoid.JumpHeight = s
     end)
+
 
     --Button Auto Farme
 
