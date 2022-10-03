@@ -18,17 +18,19 @@ local Close = Instance.new("TextButton")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Frame.BackgroundColor3 = Color3.fromRGB(5, 33, 6)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.447429031, 0, 0.333523542, 0)
-Frame.Size = UDim2.new(0, 137, 0, 183)
+Frame.Position = UDim2.new(0.427475065, 0, 0.305592924, 0)
+Frame.Size = UDim2.new(0, 188, 0, 233)
 
 TopBar.Name = "TopBar"
 TopBar.Parent = Frame
-TopBar.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 63, 0)
+TopBar.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TopBar.BorderSizePixel = 0
-TopBar.Position = UDim2.new(0, 0, -8.33813587e-08, 0)
-TopBar.Size = UDim2.new(0, 137, 0, 23)
+TopBar.Position = UDim2.new(0, 0, -0.0028963685, 0)
+TopBar.Size = UDim2.new(0, 188, 0, 31)
 TopBar.Font = Enum.Font.SourceSansBold
 TopBar.Text = "Key"
 TopBar.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -41,8 +43,8 @@ TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextBox.BackgroundTransparency = 1.000
 TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.0437956192, 0, 0.240437165, 0)
-TextBox.Size = UDim2.new(0, 125, 0, 27)
+TextBox.Position = UDim2.new(0.0437930487, 0, 0.210854262, 0)
+TextBox.Size = UDim2.new(0, 172, 0, 39)
 TextBox.ZIndex = 2
 TextBox.Font = Enum.Font.SourceSansBold
 TextBox.Text = ""
@@ -61,7 +63,7 @@ TextBox_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
 TextBox_Roundify_12px.Selectable = true
 TextBox_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
 TextBox_Roundify_12px.Image = "rbxassetid://3570695787"
-TextBox_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 0, 0)
+TextBox_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 170, 0)
 TextBox_Roundify_12px.ScaleType = Enum.ScaleType.Slice
 TextBox_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 
@@ -69,8 +71,8 @@ TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 TextButton.BackgroundTransparency = 1.000
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.131386861, 0, 0.420765042, 0)
-TextButton.Size = UDim2.new(0, 101, 0, 16)
+TextButton.Position = UDim2.new(0.131379306, 0, 0.425121754, 0)
+TextButton.Size = UDim2.new(0, 139, 0, 22)
 TextButton.ZIndex = 2
 TextButton.Font = Enum.Font.SourceSansBold
 TextButton.Text = "Enter"
@@ -85,11 +87,11 @@ TextButton_Roundify_12px.Active = true
 TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
 TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_Roundify_12px.BackgroundTransparency = 1.000
-TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Position = UDim2.new(0.497599572, 0, 0.514633179, 0)
 TextButton_Roundify_12px.Selectable = true
-TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Size = UDim2.new(0.995199502, 0, 1.00326145, 0)
 TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 85, 0)
 TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 
@@ -98,13 +100,13 @@ CopyBox.Parent = Frame
 CopyBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CopyBox.BackgroundTransparency = 1.000
 CopyBox.BorderSizePixel = 0
-CopyBox.Position = UDim2.new(0.0367007293, 0, 0.745901644, 0)
-CopyBox.Size = UDim2.new(0, 125, 0, 27)
+CopyBox.Position = UDim2.new(0.0366989225, 0, 0.749545991, 0)
+CopyBox.Size = UDim2.new(0, 172, 0, 37)
 CopyBox.ZIndex = 2
 CopyBox.ClearTextOnFocus = false
 CopyBox.Font = Enum.Font.SourceSansBold
 CopyBox.Text = ""
-CopyBox.TextColor3 = Color3.fromRGB(170, 0, 0)
+CopyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 CopyBox.TextScaled = true
 CopyBox.TextSize = 14.000
 CopyBox.TextWrapped = true
@@ -115,10 +117,11 @@ TextBox_Roundify_12px_2.Active = true
 TextBox_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
 TextBox_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_Roundify_12px_2.BackgroundTransparency = 1.000
-TextBox_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextBox_Roundify_12px_2.Position = UDim2.new(0.498368621, 0, 0.516812682, 0)
 TextBox_Roundify_12px_2.Selectable = true
-TextBox_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+TextBox_Roundify_12px_2.Size = UDim2.new(0.996737242, 0, 1.00665092, 0)
 TextBox_Roundify_12px_2.Image = "rbxassetid://3570695787"
+TextBox_Roundify_12px_2.ImageColor3 = Color3.fromRGB(0, 170, 79)
 TextBox_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
 TextBox_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
 
@@ -126,12 +129,12 @@ TextLabel.Parent = CopyBox
 TextLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0960000008, 0, -0.777629375, 0)
-TextLabel.Size = UDim2.new(0, 100, 0, 14)
+TextLabel.Position = UDim2.new(0.103487588, 0, -0.958503485, 0)
+TextLabel.Size = UDim2.new(0, 138, 0, 23)
 TextLabel.ZIndex = 2
 TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "Key Link:"
-TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
@@ -141,18 +144,19 @@ TextLabel_Roundify_12px.Parent = TextLabel
 TextLabel_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_Roundify_12px.BackgroundTransparency = 1.000
-TextLabel_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextLabel_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_Roundify_12px.Position = UDim2.new(0.502788186, 0, 0.533029675, 0)
+TextLabel_Roundify_12px.Size = UDim2.new(1.00439167, 0, 1.01646221, 0)
 TextLabel_Roundify_12px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_12px.ImageColor3 = Color3.fromRGB(1, 85, 45)
 TextLabel_Roundify_12px.ScaleType = Enum.ScaleType.Slice
 TextLabel_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 
 Close.Name = "Close"
 Close.Parent = Frame
-Close.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Close.BackgroundColor3 = Color3.fromRGB(4, 170, 95)
 Close.BorderSizePixel = 0
-Close.Position = UDim2.new(0.861518323, 0, 0, 0)
-Close.Size = UDim2.new(0, 19, 0, 23)
+Close.Position = UDim2.new(0.833506823, 0, -0.00289628841, 0)
+Close.Size = UDim2.new(0, 31, 0, 31)
 Close.Font = Enum.Font.SourceSansBold
 Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -162,7 +166,7 @@ Close.TextWrapped = true
 
 -- Scripts:
 
-local function QEMO_fake_script() -- Frame.LocalScript 
+local function SIREO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -212,31 +216,17 @@ local function QEMO_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(QEMO_fake_script)()
-local function XFPRTU_fake_script() -- Frame.Key 
+coroutine.wrap(SIREO_fake_script)()
+local function ZRACZE_fake_script() -- Frame.Key 
 	local script = Instance.new('LocalScript', Frame)
 
-
-
-
-
-
-
-
-    --KEY
+	--Key
 	local Key = {"ZA46AHFBHQ6FF6QG"}
 	
-
-
-
-
-
-
-
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
 		
 		if script.Parent.TextBox.Text == Key[1] then
-		
+			
 			--Else
 			script.Parent.TextBox.Text = ""
 			
@@ -244,26 +234,22 @@ local function XFPRTU_fake_script() -- Frame.Key
 			script.Parent.TopBar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
 			
 			wait(1)
-
-
-			--LoadString
+			
+			--Load
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/zetoirque/ScriptAnimeRace/main/Main.lua"))()
-
-
+			
 			script.Parent:Destroy()
 			
 		end
 		
 	end)
-
-
-    --Link
+	
+	--Link
 	script.Parent.CopyBox.Text = "https://pastebin.com/RmvXsVrj"
 	
-
 end
-coroutine.wrap(XFPRTU_fake_script)()
-local function XUWBFFI_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZRACZE_fake_script)()
+local function TZMEF_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -273,4 +259,17 @@ local function XUWBFFI_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(XUWBFFI_fake_script)()
+coroutine.wrap(TZMEF_fake_script)()
+local function FQPMZ_fake_script() -- Frame.UICorner 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIC1 = Instance.new("UICorner")
+	local UIC2 = Instance.new("UICorner")
+	
+	UIC1.Parent = script.Parent
+	UIC2.Parent = script.Parent.Close
+	
+	
+	
+end
+coroutine.wrap(FQPMZ_fake_script)()
