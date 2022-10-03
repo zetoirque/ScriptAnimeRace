@@ -236,20 +236,7 @@ local function XFPRTU_fake_script() -- Frame.Key
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
 		
 		if script.Parent.TextBox.Text == Key[1] then
-			
-
-
-
-
-
-			--LoadString
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/zetoirque/ScriptAnimeRace/main/Main.lua"))()
-
-
-
-
-
-			
+		
 			--Else
 			script.Parent.TextBox.Text = ""
 			
@@ -257,28 +244,23 @@ local function XFPRTU_fake_script() -- Frame.Key
 			script.Parent.TopBar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
 			
 			wait(1)
+
+
+			--LoadString
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/zetoirque/ScriptAnimeRace/main/Main.lua"))()
+
+
 			script.Parent:Destroy()
 			
 		end
 		
 	end)
-	
-
-
-
-
 
 
     --Link
 	script.Parent.CopyBox.Text = "https://pastebin.com/RmvXsVrj"
-
 	
 
-
-
-
-    
-	
 end
 coroutine.wrap(XFPRTU_fake_script)()
 local function XUWBFFI_fake_script() -- Close.LocalScript 
