@@ -11,7 +11,7 @@ local uis = game:GetService("UserInputService")
 
 
 function Cheat()
-    local Window = Library.CreateLib("SCRIPT BY ZETOIRQUE", "GrapeTheme")
+    local Window = Library.CreateLib("SCRIPT BY ZETOIRQUE", "Serpent")
 
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Auto Farme")
