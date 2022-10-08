@@ -1,23 +1,20 @@
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local _1 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TopBar = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local TextBox_Roundify_12px = Instance.new("ImageLabel")
 local TextButton = Instance.new("TextButton")
 local TextButton_Roundify_12px = Instance.new("ImageLabel")
-local CopyBox = Instance.new("TextBox")
-local TextBox_Roundify_12px_2 = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_Roundify_12px = Instance.new("ImageLabel")
 local Close = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+_1.Name = "1"
+_1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Parent = ScreenGui
+Frame.Parent = _1
 Frame.BackgroundColor3 = Color3.fromRGB(5, 33, 6)
 Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderSizePixel = 0
@@ -95,62 +92,6 @@ TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 85, 0)
 TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
 
-CopyBox.Name = "CopyBox"
-CopyBox.Parent = Frame
-CopyBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CopyBox.BackgroundTransparency = 1.000
-CopyBox.BorderSizePixel = 0
-CopyBox.Position = UDim2.new(0.0366989225, 0, 0.749545991, 0)
-CopyBox.Size = UDim2.new(0, 172, 0, 37)
-CopyBox.ZIndex = 2
-CopyBox.ClearTextOnFocus = false
-CopyBox.Font = Enum.Font.SourceSansBold
-CopyBox.Text = ""
-CopyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-CopyBox.TextScaled = true
-CopyBox.TextSize = 14.000
-CopyBox.TextWrapped = true
-
-TextBox_Roundify_12px_2.Name = "TextBox_Roundify_12px"
-TextBox_Roundify_12px_2.Parent = CopyBox
-TextBox_Roundify_12px_2.Active = true
-TextBox_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextBox_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_Roundify_12px_2.BackgroundTransparency = 1.000
-TextBox_Roundify_12px_2.Position = UDim2.new(0.498368621, 0, 0.516812682, 0)
-TextBox_Roundify_12px_2.Selectable = true
-TextBox_Roundify_12px_2.Size = UDim2.new(0.996737242, 0, 1.00665092, 0)
-TextBox_Roundify_12px_2.Image = "rbxassetid://3570695787"
-TextBox_Roundify_12px_2.ImageColor3 = Color3.fromRGB(0, 170, 79)
-TextBox_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
-TextBox_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
-
-TextLabel.Parent = CopyBox
-TextLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.103487588, 0, -0.958503485, 0)
-TextLabel.Size = UDim2.new(0, 138, 0, 23)
-TextLabel.ZIndex = 2
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Key Link:"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextLabel_Roundify_12px.Name = "TextLabel_Roundify_12px"
-TextLabel_Roundify_12px.Parent = TextLabel
-TextLabel_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_Roundify_12px.BackgroundTransparency = 1.000
-TextLabel_Roundify_12px.Position = UDim2.new(0.502788186, 0, 0.533029675, 0)
-TextLabel_Roundify_12px.Size = UDim2.new(1.00439167, 0, 1.01646221, 0)
-TextLabel_Roundify_12px.Image = "rbxassetid://3570695787"
-TextLabel_Roundify_12px.ImageColor3 = Color3.fromRGB(1, 85, 45)
-TextLabel_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-TextLabel_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-
 Close.Name = "Close"
 Close.Parent = Frame
 Close.BackgroundColor3 = Color3.fromRGB(4, 170, 95)
@@ -166,7 +107,7 @@ Close.TextWrapped = true
 
 -- Scripts:
 
-local function SIREO_fake_script() -- Frame.LocalScript 
+local function ANZSE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -216,8 +157,8 @@ local function SIREO_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(SIREO_fake_script)()
-local function ZRACZE_fake_script() -- Frame.Key 
+coroutine.wrap(ANZSE_fake_script)()
+local function ZTIK_fake_script() -- Frame.Key 
 	local script = Instance.new('LocalScript', Frame)
 
 	--Key
@@ -231,7 +172,7 @@ local function ZRACZE_fake_script() -- Frame.Key
 			script.Parent.TextBox.Text = ""
 			
 			script.Parent.TopBar.Text = "Good !"
-			script.Parent.TopBar.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+			script.Parent.TopBar.BackgroundColor3 = Color3.new(0, 0.666667, 1)
 			
 			wait(1)
 			
@@ -244,12 +185,9 @@ local function ZRACZE_fake_script() -- Frame.Key
 		
 	end)
 	
-	--Link
-	script.Parent.CopyBox.Text = "https://pastebin.com/RmvXsVrj"
-	
 end
-coroutine.wrap(ZRACZE_fake_script)()
-local function TZMEF_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZTIK_fake_script)()
+local function PQPMAKP_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -259,8 +197,8 @@ local function TZMEF_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(TZMEF_fake_script)()
-local function FQPMZ_fake_script() -- Frame.UICorner 
+coroutine.wrap(PQPMAKP_fake_script)()
+local function RRWR_fake_script() -- Frame.UICorner 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIC1 = Instance.new("UICorner")
@@ -272,4 +210,4 @@ local function FQPMZ_fake_script() -- Frame.UICorner
 	
 	
 end
-coroutine.wrap(FQPMZ_fake_script)()
+coroutine.wrap(RRWR_fake_script)()
